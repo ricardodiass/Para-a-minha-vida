@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Você 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div id="hearts-container"></div>
+
+  <main class="container">
+
+    <h1 class="titulo">Para Você <span class="coracao">💗</span></h1>
+
+    <div class="foto-wrapper">
+      <div class="foto-moldura">
+        <img src="foto.JPG" alt="Nossa foto" class="foto" id="nossaFoto">
+      </div>
+      <span class="foto-decoracao">✨</span>
+    </div>
+
+    <section class="mensagem-card">
+      <p id="mensagem" class="mensagem"></p>
+      <span class="cursor" id="cursor">|</span>
+    </section>
+
+<div class="player">
+  <audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="btnMusica" class="btn-musica">
+    <span id="iconeMusica">▶️</span> Tocar música
+  </button>
+
+  <div class="controle-volume">
+    <span id="iconeVolume">🔊</span>
+
+    <input 
+      type="range" 
+      id="volumeMusica" 
+      min="0" 
+      max="1" 
+      step="0.01" 
+      value="0.2"
+      aria-label="Volume da música"
+    >
+
+    <span id="porcentagemVolume">20%</span>
+  </div>
+
+  <div class="notas" id="notas"></div>
+</div>
+
+    <p class="assinatura">com todo o meu amor, pra sempre nós. 💌</p>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
